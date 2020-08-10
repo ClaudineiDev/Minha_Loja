@@ -1,0 +1,52 @@
+<resources>
+    <string name="app_name">Minha Loja</string>
+
+    <string name="title_activity_main_navigation">MainNavigation</string>
+    <string name="title_home">Home</string>
+    <string name="title_venda">Vender</string>
+    <string name="title_notifications">Atualizar</string>
+    <string name="title_cliente">Cliente</string>
+
+    <string name="pagamento_prompt">Tipo de pagamnto</string>
+    <string-array name="tipo_pagamento">
+        <item>Tipo de pagamento</item>
+        <item>A vista</item>
+        <item>Débito</item>
+        <item>Crédito</item>
+        <item>Outro</item>
+    </string-array>
+
+    <string name="parcela_prompt">Tipo de pagamnto</string>
+    <string-array name="parcela">
+        <item></item>
+        <item>1x</item>
+        <item>2x</item>
+        <item>3x</item>
+    </string-array>
+
+    <string name="item_tipo_prompt">Tipo de pagamnto</string>
+    <string-array name="item_tipo">
+        <item>Tipo</item>
+        <item>bse - Blusa Evan.</item>
+        <item>bsm - Blusa Modi.</item>
+        <item>sae - Saia Evan.</item>
+        <item>sam - Saia Modi.</item>
+        <item>cpm - Croped Modi.</item>
+        <item>stm - Shorts Modi.</item>
+        <item>jde - Jardineira Evan.</item>
+        <item>jdm - Jardineira Modi.</item>
+        <item>vte - Vestido Evan.</item>
+        <item>vtm - Vestido Modi.</item>
+        <item>cse - Camisa Evan.</item>
+        <item>csm - Camisa Modi.</item>
+        <item>csm - Camisa Modi.</item>
+        <item>bde - Body Evan.</item>
+        <item>bdm - Body Modi.</item>
+        <item>spe - Salopete Evan.</item>
+        <item>spm - Salopete Modi.</item>
+        <item>cje - Conjunto Evan.</item>
+        <item>cjm - Conjunto Modi.</item>
+
+    </string-array>
+
+</resources>

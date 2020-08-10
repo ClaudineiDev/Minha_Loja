@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <EditText
+        android:id="@+id/et_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:layout_weight="1"
+        android:drawablePadding="10dp"
+        android:hint="Cód, Tipo, Desc, Marca, Modelo"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/btn_localizar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:background="#FE9A2E"
+        android:text="Buscar"
+        android:layout_alignRight="@id/et_search"
+        android:textColor="@android:color/white" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/lv_items"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/btn_localizar"
+        android:layout_margin="5dp"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="15dp" />
+</RelativeLayout>

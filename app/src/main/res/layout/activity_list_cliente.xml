@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/list_clientes_topAppBar"
+        style="@style/Widget.MaterialComponents.Toolbar.Primary"
+        android:elevation="4dp"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        app:title="Clientes"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <EditText
+            android:id="@+id/listcliente_ed_procurar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:drawablePadding="10dp"
+            android:hint="Cliente"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/listcliente_bt_buscar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#5882FA"
+            android:onClick="getItem"
+            android:text="Adicionar"
+            android:textColor="@android:color/white" />
+
+
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ListView
+                android:id="@+id/listcliente_lv_cliente"
+                android:layout_width="match_parent"
+                android:layout_height="370dp"
+                android:layout_margin="5dp"
+                android:dividerHeight="8px"
+                android:footerDividersEnabled="false"
+                android:headerDividersEnabled="false"
+                android:scrollbars="vertical" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
